@@ -1,0 +1,63 @@
+1、数组
+	1、进出栈操作
+		栈式操作：提供了快速操作数组头部和尾部元素的方法
+		1、push()
+			入栈，压栈，向数组尾部增加新元素，并返回新数组的长度
+				arr[arr.length] = "张三丰";
+				arr.push("张三丰");
+		2、pop()
+			出栈，弹栈，删除并返回数组尾部的元素
+		3、unshift()
+			向数组的头部添加新元素并返回数组的长度
+		4、shift()
+			删除并返回数组头部的元素
+	2、二维数组
+		1、什么是二维数组
+			数组中的每个元素又是一个数组
+		2、声明二维数组
+			var books = [
+				["西游记","三国演义","水浒传","红楼梦"],
+				["老人与海","雾都孤儿","海底两万里"]
+			];
+			
+			获取 "三国演义"
+			books[0][1]
+2、字符串 - string
+	1、声明字符串
+		var str1 = "字符串1";
+		var str2 = String("字符串2");
+		var str3 = new String("字符串3");
+	2、length 属性
+		作用：返回当前字符串中字符的个数
+	3、常用函数 - String API
+		1、大小写转换函数
+			1、toUpperCase()
+				返回当前字符串的完全大写形式
+			2、toLowerCase()
+				返回当前字符串的完全小写形式
+			练习：
+				1、创建一个数组，并初始化若干数据(由英文大小写以及数组0-9组成)
+				2、生成一个四位随机验证码
+					Math.random()
+				3、将生成四位随机验证码通过prompt提示给用户去看并接收用户的数据
+				4、比较用户输入的数据与生成的随机验证码是否一致并给出提示(忽略大小写)
+		2、获取指定位置的字符 或 字符的 Unicode码
+			1、获取指定位置的字符
+				函数：str.charAt(index)
+				ex:
+					var str = "Hello World";
+					var s = str.charAt(3);
+					console.log(s); // l
+					console.log(str.charAt(6)); //W
+			2、获取指定位置的字符的Unicode码
+				函数：str.charCodeAt(index)
+				ex:
+					var str = "Hello World";
+					var r = str.charCodeAt(3);
+					console.log(r); // l的Unicode码(十进制)
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+1、文本格式化属性
+	1、字体属性
+		1、指定字体
+			属性：font-family
+			取值：由 , 隔开的字体列表
+			注意：如果字体中包含中文或空格的话，要用引号引起来
+			ex:
+				font-family:"微软雅黑";
+				font-family:"Microsoft Yahei";
+				font-family:"微软雅黑",Arial,Helvetica;
+		2、指定字体大小
+			属性：font-size
+			取值：px 或 pt
+		3、字体加粗
+			属性：font-weight
+			取值：
+				1、normal ：非加粗显示
+				2、bold ：加粗显示
+				3、value
+					取值为无单位的数字
+					400 ：normal
+					900 ：bold
+		4、字体样式
+			属性：font-style
+			取值：
+				1、normal ：非斜体显示
+				2、italic ：斜体显示
+		练习：
+			1、创建01-font.html
+			2、创建一个div，内容随意
+			3、设置div的字体为 "楷体",加粗，斜体，大小为18pt
+		5、字体属性(简写)
+			属性：font
+			取值：style weight size family;
+			注意：
+				使用简写方式时，必须要设置family的值，否则无效
+				font:12px;/*无效*/
+				font:12px "微软雅黑";
+	2、文本属性
+		1、文本颜色
+			属性：color
+			取值：合法的颜色值
+		2、文本的排列方式
+			作用：控制某元素内的文本，图片和行内块元素的排列方式
+			属性：text-align
+			取值：left / center / right / justify
+				justify ：两端对齐
+		3、文字修饰
+			作用：指定线条修饰效果
+			属性：text-decoration
+			取值：
+				1、none : 无任何线条显示
+				2、underline : 下划线
+				3、overline : 上划线
+				4、line-through : 删除线
+		4、行高
+			作用：指定一行文本数据的所占高度
+			特点：如果行高的高度高于文本的高度的话，那么文本将在行高的范围内垂直居中显示
+			使用场合：
+				1、文本垂直居中
+				2、行间距
+			属性：line-height
+			取值：
+				1、以 px 为单位的数字
+				2、无单位的数字，表示的是当前字体大小的倍数
+			ex:
+				#d1{
+					font-size:12px;
+					/*line-height:24px;*/
+					line-height:2;
+				}
+			练习：
+				1、创建一个网页 03-lineHeight.html
+				2、创建一个div，200*200，编写一行文本，通过css的方式，使得当前文本绝对居中(水平和垂直都居中)
+				3、创建一个div，多编写几行文本，模拟1.5倍行间距
+2、表格属性
+	1、表格的常用属性
+		1、尺寸属性
+		2、边框属性
+		3、文本格式化
+		4、背景属性
+		5、框模型
+			margin不能用在td上的
+	2、表格的特有属性
+		1、边框合并
+			属性：border-collapse
+			取值：
+				1、separate
+					默认值，分离边框(双线边框)模式
+				2、collapse
+					边框合并
+		2、边框边距
+			作用：设置每两个单元格之间的距离
+			属性：border-spacing
+			取值：
+				1、指定一个数值
+					水平和垂直间距相等
+				2、给定两个数值
+					第一个值：表示水平间距
+					第二个值：表示垂直间距
+					两个数值之间使用空格隔开
+			注意：
+				必须要在分离边框模式下使用
+				即border-collapse的值为separate的时候有效
+
+
+
+

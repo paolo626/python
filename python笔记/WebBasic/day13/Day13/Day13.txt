@@ -1,0 +1,30 @@
+1、DOM
+	1、增加节点
+		1、创建节点
+			语法：
+				var elem=document.createElement("元素名");
+				练习：
+					1、通过 按钮动态创建一对div
+					2、设置div的id值为 container
+					3、设置div的文本为 "动态创建的div"
+					4、将div打印在控制台上
+		2、增加节点
+			将创建好的元素增加到网页中
+			1、document.body.appendChild(elem)
+				向body中追加elem新元素
+			2、parentNode.appendChild(elem)
+				向parentNode的内部追加elem新元素
+				parentNode可以表示页面上的任意一个节点
+			3、parentNode.insertBefore(newElem,oldElem)
+				将newElem插入到parentNode中oldElem之前
+	2、删除节点
+		在DOM中，删除节点的行为只能由父元素发起
+		1、删除body中的子元素
+			document.body.removeChild(elem);
+		2、删除其他元素的子元素
+			parentNode.removeChild(elem);
+			删除parentNode中的elem子元素
+
+
+
+
